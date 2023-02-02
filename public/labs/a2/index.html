@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dee's Restaurant</title>
+</head>
+<body>
+<h1>Welcome to Dee's  Restaurant</h1>
+<p>We offer a variety of delicious dishes for breakfast, lunch, and dinner. </p>
+<p>Take a look at our menu below:</p>
+
+<h2>Breakfast</h2>
+<ol>
+  <li>Grilled cheese</li>
+  <li>Chicken Rolls</li>
+  <li>Croissants</li>
+</ol>
+
+<h2>Lunch</h2>
+<ul>
+  <li>Veggie Burger</li>
+  <li>Chicken Sandwich</li>
+  <li>Subway</li>
+</ul>
+
+<h2>Dinner</h2>
+<ul>
+  <li>Pasta</li>
+  <li>Pot Rice</li>
+  <li>Thai noodles</li>
+</ul>
+
+<h2>Drinks</h2>
+<table border="1" width="45%">
+  <tr>
+    <th>Drink</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Hot Chocolate</td>
+    <td>$4.50</td>
+  </tr>
+  <tr>
+    <td>Tea</td>
+    <td>$3.50</td>
+  </tr>
+  <tr>
+    <td>Coke</td>
+    <td>$3.75</td>
+  </tr>
+</table>
+
+<img src="deerestaurant.jpeg" alt="Picture of our restaurant" height="300" width="600">
+
+<form action="submit-form.php">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <br><br>
+  <label for="feedback">Feedback:</label>
+  <textarea id="feedback" name="feedback"></textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Follow us on <a href="https://www.facebook.com/">Facebook</a> for updates and special promotions!</p>
+
+<h2>Table of Content</h2>
+<ul>
+  <li><a href="#embedding-website">Embedding other website</a></li>
+  <li><a href="#embedding-youtube">Embedding Youtube</a></li>
+  <li><a href="#embedding-slides">Embedding Google Slides</a></li>
+</ul>
+
+<a href name="embedding-website" ></a>
+<h2>Embedding other websites</h2>
+<a href="#top">Top</a><br/>
+<iframe width="600"
+        height="400"
+        src="https://en.wikipedia.org/wiki/SpaceX">
+</iframe>
+
+<a name="embedding-youtube"></a>
+<h2>Embedding YouTube</h2>
+<a href="#top">Top</a><br/>
+<iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/7CZTLogln34"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+
+<a name="embedding-slides"></a>
+<h2>Embedding Google slides</h2>
+<a href="#top">Top</a><br/>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+        frameborder="0"
+        width="680"
+        height="418"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true">
+</iframe>
+
+<h2>Table of Content SVG</h2>
+<ul>
+  <li><a href="#rectangles">Drawing Rectangles</a></li>
+  <li><a href="#circles">Drawing Circles</a></li>
+  <li><a href="#polygons">Drawing Polygons</a></li>
+</ul>
+
+<a name="rectangles"></a>
+<h2>Drawing rectangles</h2>
+<a href="#top">Top</a><br/>
+<svg width="300" height="100">
+  <rect width="300" height="100"
+        style="fill:rgb(86,168,126); stroke-width:10;
+   stroke:rgb(0,0,0)" />
+</svg>
+<br><br><br><br><br><br><br><br>
+<a name="circles"></a>
+<h2>Drawing circles</h2>
+<a href="#top">Top</a><br/>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40"
+          stroke="green" stroke-width="4" fill="red" />
+</svg>
+<br><br><br><br><br><br><br><br>
+<a name="polygons"></a>
+<h2>Drawing polygons</h2>
+<a href="#top">Top</a><br/>
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+           style="fill:#616fbe; stroke:#132350; stroke-width:5; fill-rule:evenodd;" />
+</svg>
+
+</body>
+</html>
