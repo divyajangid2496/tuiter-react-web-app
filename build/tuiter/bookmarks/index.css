@@ -1,0 +1,135 @@
+.wd-bookmark-container {
+  padding-left: 16px;
+  padding-top: 12px;
+}
+
+.wd-bookmark-title {
+  color: white;
+  font-size: 20px;
+}
+
+.wd-bookmark-handle {
+  color: lightgray;
+  font-size: 13px;
+  padding-top: 12px;
+}
+
+.wd-bookmark-border {
+  border-top: 1px solid lightgray;
+  margin-top: 12px;
+}
+
+.wd-profile-img {
+  position: absolute;
+  left: 16px;
+  top: 125px;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px; /* half of the width and height */
+}
+
+.wd-author {
+  position: absolute;
+  left: calc(16px + 48px + 12px);
+  top: 125px;
+  font-size: 15px;
+  color: white;
+}
+
+.wd-handle {
+  color: lightgray;
+}
+
+.wd-post {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 38px 16px 0px 70px;
+}
+
+.wd-post-content {
+  color: white;
+  font-size: 15px;
+  width: 506px;
+  max-width: 506px;
+  margin-right: 16px;
+}
+
+.wd-post-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 65px;
+  margin-top: 15px;
+}
+
+.wd-rounded-image {
+  width: 504px;
+  height: 264px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-left: 0px;
+}
+
+.wd-post-text {
+  border: 1px solid lightgray;
+  border-radius: 0 0 20px 20px;
+  padding: 12px;
+  width: 478px;
+  margin-bottom: 12px;
+}
+
+.wd-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.wd-description {
+  font-size: 15px;
+  color: lightgray;
+}
+
+.wd-icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.wd-icon-container a {
+  display: flex;
+  align-items: center;
+}
+
+.wd-icon-heart {
+  color: red;
+  margin-left: 100px;
+}
+
+.wd-icon-like{
+  color: lightgray;
+  margin-left: 100px;
+}
+
+.wd-icon-share{
+  color: lightgray;
+  margin-left: 100px;
+}
+
+.wd-icon-comment{
+  color: lightgray;
+}
+
+.wd-number {
+  color: lightgray;
+  margin-left: 12px;
+}
+
+.wd-red {
+  color: red;
+}
+
+.wd-light-gray {
+  color: lightgray;
+}
