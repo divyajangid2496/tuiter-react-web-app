@@ -1,11 +1,6 @@
-.wd-bg-color-black {
-  background: black;
-}
-
 .wd-search-container {
   display: flex;
   justify-content: left;
-  offset-before: 16px;
 }
 
 .wd-form {
@@ -88,48 +83,64 @@
   height: 0px;
 }
 
-.suggested-posts {
+.wd-suggested-posts {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
 
-.post {
+.wd-post {
   margin-bottom: 20px;
 }
 
-.topic {
+.wd-topic {
   font-size: 13px;
   color: #6E7680;
 }
 
-.title {
+.wd-title {
   font-size: 16px;
   margin-top: 5px;
   color: white;
   margin-bottom: 5px;
 }
 
-.tuits {
+.wd-tuits {
   font-size: 13px;
   color: #6E7680;
 }
 
-.author {
+.wd-author {
   color: white;
   margin-right: 16px;
+  display: inline-flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
 }
 
-.publication {
+.wd-publication {
   color: white;
-  margin-right: 16px;
+  display: inline-flex;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 0;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-.post-image {
+.wd-additional-post {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wd-post-image {
   width: 100px;
   height: 100px;
-  border-radius: 20%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   margin-left: auto;
-  padding-right: 50px;
+  padding-right: 16px;
   display: flex;
   justify-content: right;
 }
