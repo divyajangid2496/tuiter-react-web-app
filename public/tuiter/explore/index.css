@@ -81,10 +81,28 @@
 }
 
 .btn-primary {
+  background-color: black;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+
+.active {
+  background-color: white;
+  font-weight: bold;
+}
+
+#search-tuiter {
+  background-color: #E1E8ED;
+}
+
+.lgr {
+  background-color: #F5F8FA;
+}
+
+.btn-tweet {
+  background-color: #1DA1F2;
 }
 
 .wd-suggested-posts {
