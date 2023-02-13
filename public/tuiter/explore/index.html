@@ -162,14 +162,14 @@
                     <span class="d-none d-xl-inline">More</span>
                 </a>
             </div>
-            <a role="button" href="#" class="btn btn-primary rounded-pill mt-2 w-100 wd-media-query">Tweet</a>
+            <a role="button" href="#" class="btn btn-primary btn-tweet rounded-pill mt-2 w-100 wd-media-query">Tweet</a>
         </div>
         <div class="d-block col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
             <div class="row align-items-center mx-0">
                 <div class="col-11 px-0">
                     <label for="search-tuiter" class="form-label w-100 mb-0">
                         <div class="input-group">
-                        <span class="input-group-text bg-transparent border-end-0 rounded-end rounded-pill">
+                        <span class="input-group-text bg-transparent border-end-0 rounded-end rounded-pill" id="str">
                             <i class="fas fa-search"></i>
                         </span>
                             <input type="text"
@@ -180,7 +180,7 @@
                     </label>
                 </div>
                 <div class="col-1 wd-cog">
-                    <a href="explore-settings.html" class="fas fa-cog fa-2x text-decoration-none"></a>
+                    <a href="explore-settings.html" class="fas fa-cog fa-2x text-decoration-none" style="color: #657786;"></a>
                 </div>
             </div>
 
@@ -193,16 +193,16 @@
                     <a class="nav-link active" href="for-you.html">For you</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="trending.html">Trending</a>
+                    <a class="nav-link" href="trending.html" style="color: #657786;">Trending</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
+                    <a class="nav-link" href="news.html" style="color: #657786;">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sports.html">Sports</a>
+                    <a class="nav-link" href="sports.html" style="color: #657786;">Sports</a>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    <a class="nav-link" href="entertainment.html" style="color: #657786;">Entertainment</a>
                 </li>
             </ul>
             <div class="position-relative mt-2">
@@ -340,11 +340,11 @@
 
 
       <div class="d-none d-lg-block col-lg-4 col-xl-4 col-xxl-4">
-            <div class="list-group">
-                <div class="list-group-item fw-bolder">
+            <div class="list-group lgr">
+                <div class="list-group-item fw-bolder lgr">
                     Who to follow
                 </div>
-                <div class="list-group-item">
+                <div class="list-group-item rounded-0 bg-transparent pb-3 wd-border-bottom-gray lgr" id="lgr">
                     <div class="row align-items-center justify-content-xl-around">
                         <div class="col-lg-2 col-xl-2 col-xxl-2">
                             <img src="../images/java.png" width="50px" class="rounded-circle" alt="Java Logo"/>
@@ -354,14 +354,14 @@
                                 Java
                                 <span><i class="fas fa-check-circle"></i></span>
                             </div>
-                            <div>@Java</div>
+                            <div class="text-secondary">@Java</div>
                         </div>
                         <div class="col-lg-1 col-xl-3 col-xxl-3">
                             <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
                 </div>
-                <div class="list-group-item">
+                <div class="list-group-item lgr">
                     <div class="row align-items-center justify-content-xl-around">
                         <div class="col-lg-2 col-xl-2 col-xxl-2">
                             <img src="../images/relativityspace.jpeg" width="50px" class="rounded-circle"
@@ -372,14 +372,14 @@
                                 Relativity Space
                                 <span><i class="fas fa-check-circle"></i></span>
                             </div>
-                            <div>@relativityspace</div>
+                            <div class="text-secondary">@relativityspace</div>
                         </div>
                         <div class="col-lg-1 col-xl-3 col-xxl-3">
                             <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
                 </div>
-                <div class="list-group-item">
+                <div class="list-group-item lgr">
                     <div class="row align-items-center justify-content-xl-around">
                         <div class="col-lg-2 col-xl-2 col-xxl-2">
                             <img src="../images/virgingalactic.svg" width="50px" class="rounded-circle"
@@ -390,14 +390,14 @@
                                 Virgin Galactic
                                 <span><i class="fas fa-check-circle"></i></span>
                             </div>
-                            <div>@virgingalactic</div>
+                            <div class="text-secondary">@virgingalactic</div>
                         </div>
                         <div class="col-lg-1 col-xl-3 col-xxl-3">
                             <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
                 </div>
-                <div class="list-group-item">
+                <div class="list-group-item lgr">
                     <div class="row align-items-center justify-content-xl-around">
                         <div class="col-lg-2 col-xl-2 col-xxl-2">
                             <img src="../images/nasa.png" width="50px" class="rounded-circle" alt="NASA Logo"/>
@@ -407,14 +407,14 @@
                                 NASA
                                 <span><i class="fas fa-check-circle"></i></span>
                             </div>
-                            <div>@NASA</div>
+                            <div class="text-secondary">@NASA</div>
                         </div>
                         <div class="col-lg-1 col-xl-3 col-xxl-3">
                             <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
                 </div>
-                <div class="list-group-item">
+                <div class="list-group-item lgr">
                     <div class="row align-items-center justify-content-xl-around">
                         <div class="col-lg-2 col-xl-2 col-xxl-2">
                             <img src="../images/tesla.webp" width="50px" class="rounded-circle" alt="Tesla Logo"/>
@@ -424,7 +424,7 @@
                                 Tesla
                                 <span><i class="fas fa-check-circle"></i></span>
                             </div>
-                            <div>@Tesla</div>
+                            <div class="text-secondary">@Tesla</div>
                         </div>
                         <div class="col-lg-1 col-xl-3 col-xxl-3">
                             <button type="button" class="btn btn-primary rounded-pill">Follow</button>
