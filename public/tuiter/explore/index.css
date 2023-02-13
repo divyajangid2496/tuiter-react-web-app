@@ -88,6 +88,12 @@
   border-bottom-left-radius: 15px;
 }
 
+.for-you {
+  text-decoration: underline;
+  text-decoration-color: #1DA1F2;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 15px;
+}
 .active {
   background-color: white;
   font-weight: bold;
