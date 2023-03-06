@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Load boostrap and fontawesome library, load third-party library first -->
+    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+
+    <!-- Link to index.css style sheet, can override the library above -->
+    <link href="explore.css" rel="stylesheet" />
+</head>
+<body class="bg-black text-white">
+<!-- Explore Page -->
+<!-- Use pt-2 to add padding above the container -->
+<div class="container">
+    <div class="row">
+        <!-- LEFT: Navigation sidebar -->
+        <div class="px-0 d-block col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
+            <div class="list-group fs-5 mb-3">
+                <a href="#" class="list-group-item bg-transparent wd-color-lightgray fs-4 mb-1 py-2">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <i class="d-inline fa-solid fa-t fa-fw"></i>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">&#160</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item bg-transparent wd-color-lightgray mb-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <i class="d-inline fa-solid fa-house-user fa-fw"></i>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">Home</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item bg-transparent text-white mb-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <i class="d-inline fas fa-hashtag fa-fw"></i>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">Explore</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item bg-transparent wd-color-lightgray mb-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <i class="d-inline fa-regular fa-bell fa-fw"></i>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">Notifications </div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item bg-transparent wd-color-lightgray mb-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <i class="d-inline fa-regular fa-envelope fa-fw"></i>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">Messages</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item bg-transparent wd-color-lightgray mb-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <i class="d-inline fa-regular fa-bookmark fa-fw"></i>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">Bookmarks</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item bg-transparent wd-color-lightgray mb-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <i class="d-inline fa-regular fa-rectangle-list fa-fw"></i>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">Lists</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item bg-transparent wd-color-lightgray mb-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <i class="d-inline fa-regular fa-user fa-fw"></i>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">Profile</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item bg-transparent wd-color-lightgray mb-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <span class="fa-stack wd-small fa-fw">
+                                <i class="fa-regular fa-circle fa-stack-2x" style="text-align: left"></i>
+                                <i class="fa-solid fa-ellipsis fa-stack-1x" style="width: 80%"></i>
+                            </span>
+                        </div>
+                        <div class="d-none d-xl-inline col-xl-10">More</div>
+                    </div>
+                </a>
+            </div>
+            <!--            w-100 stands for width 100% as the parent -->
+            <!--            wd-media-query makes the Tweet button wider than the list of icons above it.-->
+            <div class="pe-4">
+                <a role="button" href="#" class="btn wd-bg-color-blue text-white fw-bolder rounded-pill mt-2 py-3 w-100 wd-media-query">Tweet</a>
+            </div>
+        </div>
+        <!-- MIDDLE: Main Content -->
+        <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6 px-0 wd-border-left-right-gray">
+            <!--        Part 1: Search Field -->
+            <!--            align-items-center makes the cog stand at the center of the box -->
+            <div class="row align-items-center pt-2 px-3 mx-0">
+                <div class="col-11 px-0">
+                    <label for="search-tuiter" class="form-label w-100 mb-0">
+                        <div class="input-group">
+                    <span class="input-group-text border-end-0 rounded-end rounded-pill wd-bg-color-gray">
+                        <i class="fas fa-search px-0 wd-icon"></i>
+                    </span>
+                    <input type="text"
+                           id="search-tuiter"
+                           placeholder="Search Twitter"
+                           class="form-control border-start-0 rounded-start rounded-pill wd-bg-color-gray"/>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-1 px-0">
+                    <a href="explore-settings.html" class="fas fa-cog text-decoration-none wd-cog"></a>
+                </div>
+            </div>
+            <!--        Part 2: Navigation Tabs -->
+            <ul class="nav nav-pills justify-content-between pt-2 px-3 wd-border-bottom-gray">
+                <li class="nav-item">
+                    <a class="nav-link wd-nav-link" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-nav-link" href="covid19.html">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link wd-nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item d-none d-md-block d-lg-none d-xxl-block wd-active">
+                    <a class="nav-link wd-nav-link text-white" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <!--        Part 3: Image with title -->
+            <div class="position-relative">
+                <img src="../../../images/my-universe.webp" class="card-img w-100" alt="...">
+                <h2 class="text-white position-absolute bottom-0 ps-2">My Universe</h2>
+            </div>
+            <!--        Part 4: List of Tweets -->
+            <ul class="list-group">
+                <li class="list-group-item rounded-0 bg-transparent text-white pb-3 wd-border-bottom-gray">
+                    <div>Music &#183 Last night</div>
+                    <h3 class="fw-bolder">
+                        BTS and ColdPlay release their new song, My Universe
+                        <span>
+                            <i class="fa-solid fa-lemon text-warning"></i>
+                        </span>
+                    </h3>
+                </li>
+                <li class="list-group-item rounded-0 bg-transparent wd-color-lightgray pb-3">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div class="text-secondary">Trending in R&B & soul</div>
+                            <div><span class="fs-5">R Kelly</span></div>
+                            <div class="text-secondary">18.2K Tweets</div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <span>
+                                <i class="fas fa-ellipsis-h text-secondary float-end"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item rounded-0 bg-transparent wd-color-lightgray pb-3">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div class="text-secondary">Trending in R&B & soul</div>
+                            <div><span class="fs-5">Chloe</span></div>
+                            <div class="text-secondary">
+                                Trending with
+                                <span class="wd-color-blue">Halle</span>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <span>
+                                <i class="fas fa-ellipsis-h text-secondary float-end"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item rounded-0 bg-transparent wd-color-lightgray pb-3">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div>
+                                <span><i class="fa-solid fa-t"></i></span>
+                                <span class="fw-bolder">The Times</span>
+                                <span><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">&#183 September 24, 2021</span>
+                            </div>
+                            <div class="fs-5">
+                                Stanley Tucci: 'Food or sex? That's the cruelest question...'
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <img src="../../../tuiter_a5_version/images/corgi2.jpeg" class="float-end rounded-3" width="90px" alt="Javascript">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item rounded-0 bg-transparent wd-color-lightgray pb-3">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div class="text-secondary">Web Development</div>
+                            <div><span class="fw-bolder">ReactJS</span>
+                                <span>
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="text-secondary">- 2h</span>
+                            </div>
+                            <div class="fs-5">
+                                React.js is a component based front end library that makes it very easy to build Single
+                                Page Applications or SPAs
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <img src="../../../tuiter_a5_version/images/reactjs.png" class="float-end rounded-3 wd-image-filter" width="90px" alt="React.js">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item rounded-0 bg-transparent wd-color-lightgray pb-3">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div><span class="fw-bolder">JavaScript</span>
+                                <span>
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="text-secondary">- 2h</span>
+                            </div>
+                            <div class="fs-5">
+                                JavaScript is programming language that can run on browsers as well as desktops
+                            </div>
+                            <div class="text-secondary">123K Tweets</div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <img src="../../../tuiter_a5_version/images/javascript.png" class="float-end rounded-3" width="90px" alt="Javascript">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item rounded-0 bg-transparent wd-color-lightgray pb-3">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div class="text-secondary">Web Development</div>
+                            <div><span class="fs-5">jQuery</span></div>
+                            <div class="text-secondary">123K Tweets</div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <img src="../../../tuiter_a5_version/images/jquery.png" class="float-end rounded-3" width="90px" alt="jQuery">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item rounded-0 bg-transparent wd-color-lightgray pb-3">
+                    <div class="row">
+                        <div class="col-9 col-md-10">
+                            <div class="text-secondary">Web Development</div>
+                            <div>
+                                <span class="fs-5">NodeJS</span>
+                                <span>
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="text-secondary">- 2h</span></div>
+                            <div class="text-secondary">123K Tweets</div>
+                        </div>
+                        <div class="col-3 col-md-2">
+                            <img src="../../../tuiter_a5_version/images/nodejs.png" class="float-end rounded-3" width="90px" alt="NodeJS">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- RIGHT: Who to Follow right sidebar -->
+        <div class="px-0 d-lg-block col-lg-4 col-xl-4 col-xxl-4">
+            <div class="list-group rounded-4 bg-dark mt-4 ms-4">
+                <div class="list-group-item border-0 bg-transparent wd-color-lightgray fw-bolder fs-4">
+                    Who to follow
+                </div>
+                <div class="list-group-item border-0 bg-transparent wd-color-lightgray">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../../../tuiter_a5_version/images/java-logo.png" width="50px" class="rounded-circle" alt="Java Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                Java
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div class="text-secondary">@Java</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-light rounded-pill fw-bolder">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item border-0 bg-transparent wd-color-lightgray">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../../../tuiter_a5_version/images/relativityspace-logo.webp" width="50px" class="rounded-circle" alt="Relative Space Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                Relativity Space
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div class="text-secondary">@relativityspace</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-light rounded-pill fw-bolder">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item border-0 bg-transparent wd-color-lightgray">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../../../tuiter_a5_version/images/virgingalactic-logo.png" width="50px" class="rounded-circle" alt="Virgin Galactic Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                Virgin Galactic
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div class="text-secondary">@virgingalactic</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-light rounded-pill fw-bolder">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item border-0 bg-transparent wd-color-lightgray">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../../../tuiter_a5_version/images/nasa-logo.jpg" width="50px" class="rounded-circle" alt="NASA Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                NASA
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div class="text-secondary">@NASA</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-light rounded-pill fw-bolder">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item border-0 bg-transparent wd-color-lightgray">
+                    <div class="row align-items-center justify-content-xl-around">
+                        <div class="col-lg-2 col-xl-2 col-xxl-2">
+                            <img src="../../../tuiter_a5_version/images/tesla-logo.png" width="50px" class="rounded-circle" alt="Tesla Logo"/>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-7 text-nowrap">
+                            <div class="fw-bolder">
+                                Tesla
+                                <span><i class="fas fa-check-circle"></i></span>
+                            </div>
+                            <div class="text-secondary">@Tesla</div>
+                        </div>
+                        <div class="col-lg-1 col-xl-3 col-xxl-3">
+                            <button type="button" class="btn btn-light rounded-pill fw-bolder">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item border-0 bg-transparent wd-color-blue py-3">
+                    Show more
+                </div>
+            </div>
+            <div class="text-secondary mt-4 ms-4 px-4 wd-text-size">
+                <span class="pe-2">Terms of Service</span>
+                <span class="pe-2">Privacy Policy</span>
+                <span class="pe-2">Cookie Policy</span>
+                <span class="pe-2">Ads info</span>
+                <span class="pe-2">More...</span>
+                <span class="pe-2">
+                    <i class="fa fa-copyright " aria-hidden="true"></i>
+                    2021 Twitter, Inc.
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -13,3 +13,10 @@ const TodoList = () => {
     `);
 }
 export default TodoList;
+
+// <!--            ${TodoItem('Buy Milk')}-->
+// <!--            ${TodoItem('Pickup the kids')}-->
+// <!--            ${TodoItem('Walk the dogs')}-->
+// <!--            <li>Buy Milk</li>-->
+// <!--            <li>Pickup the kids</li>-->
+// <!--            <li>Walk the dogs</li>-->
