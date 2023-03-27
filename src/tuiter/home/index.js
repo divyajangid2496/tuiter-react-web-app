@@ -1,9 +1,14 @@
-import PostHomeList from "../post-home-list";
-
+// import PostHomeList from "../post-home-list";
+import TuitsList from "../tuits-list";
+import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {
     return(
-        <PostHomeList/>
+        <div>
+            <h4>Home</h4>
+            <WhatsHappening/>
+            <TuitsList />
+        </div>
     )
 }
 
