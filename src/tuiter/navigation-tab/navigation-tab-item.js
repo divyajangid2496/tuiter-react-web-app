@@ -9,6 +9,8 @@ const NavigationTabItem = (
         active = "for-you"
     }
 ) => {
+    // Replace the name for-you to for you
+    // for-you is easy for tracking route
     let name = tab.name.replace(/-/g, ' ');
     name = name ? name[0].toUpperCase() + name.slice(1) : ""
     return(

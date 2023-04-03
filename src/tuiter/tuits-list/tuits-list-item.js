@@ -1,7 +1,8 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import TuitsStats from "./tuits-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuitsThunk} from "../../services/tuits-thunks";
+// import {deleteTuit} from "../tuits/tuits-reducer";
 
 const TuitsListItem = (
     {
@@ -23,7 +24,10 @@ const TuitsListItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        // in a7, we use deleteTuit function from the reducer
+        // dispatch(deleteTuit(id));
+        // in a8, we use thunk
+        dispatch(deleteTuitsThunk(id))
     }
 
     return(

@@ -5,17 +5,20 @@ import ExploreComponent from "./explore";
 import WhoToFollowList from "./who-to-follow-list";
 import {Routes, Route} from "react-router";
 
+// 1: import the reducer
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
+// 2: import configureStore
 import { configureStore } from '@reduxjs/toolkit';
 // 3: import the Provider component
 import {Provider} from "react-redux";
 import ProfileComponent from "./profile";
 import profileReducer from "./reducers/profile-reducer";
 import EditProfileComponent from "./edit-profile";
+// 4: configure the store
 const store = configureStore(
     {
-        reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}
+        reducer: {who: whoReducer, tuitsData: tuitsReducer, profile: profileReducer}
     });
 
 function Tuiter() {
@@ -39,6 +42,8 @@ function Tuiter() {
                     <Routes>
                         <Route index element={<WhoToFollowList/>}/>
                         <Route path="/home"    element={<WhoToFollowList/>}/>
+                        {/*<Route index element={<PostSummaryList sidebar={true}/>}/>*/}
+                        {/*<Route path="/home"    element={<PostSummaryList sidebar={true}/>}/>*/}
                         <Route path="/explore/*" element={<WhoToFollowList/>}/>
                         <Route path="/profile" element={<WhoToFollowList/>}/>
                         <Route path="/profile/edit-profile" element={<WhoToFollowList/>}/>

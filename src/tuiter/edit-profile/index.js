@@ -64,15 +64,18 @@ const EditProfileComponent = () => {
         dispatch(updateUser(userInfo));
     }
 
+    // convert yyyy-MM-dd to MM/dd/yyyy
     const formatDateMM_dd_yyyy = (inputDate) => {
         const [year, month, date] = inputDate.split("-")
         return month + '/' + date+ '/' + year;
     }
 
+    // convert MM/dd/yyyy to yyyy-MM-dd
     const formatDateYYYY_MM_dd = (inputDate) => {
         return new Date(inputDate).toISOString().split('T')[0]
     }
 
+    // convert MM/dd/yyyy to MMM DD YYYY
     const formatDateMMMDDYYYY = (inputDate) => {
         return new Date(inputDate).toLocaleString('en-CA', {month: 'short', day: 'numeric', year: 'numeric'});
     }
@@ -81,6 +84,7 @@ const EditProfileComponent = () => {
 
     return(
         <>
+            {/* Edit profile and back button */}
             <div className="row align-items-center justify-content-start pb-1">
                 <div className="col-auto">
                     <Link to="/tuiter/profile" className="btn" title="cancel" >
@@ -92,6 +96,7 @@ const EditProfileComponent = () => {
                     <Link to="/tuiter/profile" className="btn btn-dark btn-sm rounded-pill position-relative float-end px-3 fw-bold" onClick={saveClickHandler}>Save</Link>
                 </div>
             </div>
+            {/* banner picture and avatar TODO: darken */}
             <div>
                 <img src={`/images/${profile.bannerPicture}`} className="w-100" style={darken_image} height="200" alt="banner" />
                 <button className="position-relative border border-0 rounded-circle btn-lg bg-dark bg-opacity-75 text-white" style={nudge_up_icon_1}><i className="bi bi-camera"/></button>
@@ -103,6 +108,7 @@ const EditProfileComponent = () => {
             </div>
 
             <div className="px-3">
+                {/* Change Name */}
                 <div className="border w-100 rounded-1 mt-2" >
                     <label className="wd-input-label text-secondary">Name</label>
                     <input type="text"
