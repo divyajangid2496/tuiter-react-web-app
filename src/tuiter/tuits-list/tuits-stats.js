@@ -48,21 +48,21 @@ const TuitsStats = (
             <div className="row justify-content-evenly">
                 <button className="col text-secondary border-0 bg-transparent text-start">
                     <FontAwesomeIcon icon="fa-regular fa-comment" className="pe-1 pe-sm-2" />
-                    <span>{tuit.replies}</span>
+                    <span>{tuit.replies.toLocaleString()}</span>
                 </button>
                 <button className="col text-secondary border-0 bg-transparent text-start">
                     <FontAwesomeIcon icon="fa-solid fa-retweet" className="pe-1 pe-sm-2" />
-                    <span>{tuit.retuits}</span>
+                    <span>{tuit.retuits.toLocaleString()}</span>
                 </button>
                 <button className="col text-secondary border-0 bg-transparent text-start" onClick={clickLikeHeartHandler}>
                     {tuit.liked && <FontAwesomeIcon icon={faHeart} color={ 'red' } className="pe-1 pe-sm-2"/>}
                     {!tuit.liked && <FontAwesomeIcon icon="fa-regular fa-heart" className="pe-1 pe-sm-2" />}
-                    <span>{tuit.likes}</span>
+                    <span>{tuit.likes.toLocaleString()}</span>
                 </button>
                 <button className="col text-secondary border-0 bg-transparent text-start" onClick={clickDislikeThumbHandler}>
                     {tuit.disliked && <FontAwesomeIcon icon={faThumbsDown} color={ 'gray' } className="pe-1 pe-sm-2"/>}
                     {!tuit.disliked && <FontAwesomeIcon icon="fa-regular fa-thumbs-down" className="pe-1 pe-sm-2"/>}
-                    <span>{tuit.dislikes}</span>
+                    <span>{tuit.dislikes.toLocaleString()}</span>
                 </button>
                 <button className="col text-secondary border-0 bg-transparent text-start">
                     <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket" className="pe-1 pe-sm-2" />
